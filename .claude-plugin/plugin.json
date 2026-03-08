@@ -1,0 +1,25 @@
+{
+  "name": "claude-context",
+  "version": "1.0.0",
+  "description": "Fully local semantic code search for Claude Code using Ollama embeddings and Milvus vector DB",
+  "author": {
+    "name": "Sharaf Nassar",
+    "url": "https://github.com/sharaf-nassar"
+  },
+  "repository": "https://github.com/sharaf-nassar/claude-context-plugin",
+  "license": "MIT",
+  "keywords": ["search", "semantic", "embeddings", "milvus", "ollama", "local"],
+  "mcpServers": {
+    "claude-context": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@zilliz/claude-context-mcp@latest"],
+      "env": {
+        "EMBEDDING_PROVIDER": "Ollama",
+        "OLLAMA_HOST": "http://127.0.0.1:11434",
+        "OLLAMA_MODEL": "nomic-embed-text",
+        "MILVUS_ADDRESS": "127.0.0.1:19530"
+      }
+    }
+  }
+}

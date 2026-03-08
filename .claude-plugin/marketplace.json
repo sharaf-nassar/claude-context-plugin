@@ -1,0 +1,21 @@
+{
+  "name": "claude-context-plugin",
+  "owner": {
+    "name": "Sharaf Nassar"
+  },
+  "description": "Fully local semantic code search for Claude Code using Ollama embeddings and Milvus vector DB",
+  "plugins": [
+    {
+      "name": "claude-context",
+      "source": "./",
+      "description": "Fully local semantic code search for Claude Code using Ollama embeddings and Milvus vector DB",
+      "version": "1.0.0",
+      "author": {
+        "name": "Sharaf Nassar"
+      },
+      "repository": "https://github.com/sharaf-nassar/claude-context-plugin",
+      "license": "MIT",
+      "keywords": ["search", "semantic", "embeddings", "milvus", "ollama", "local"]
+    }
+  ]
+}
